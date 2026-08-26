@@ -1,0 +1,149 @@
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-padding-top: 2rem;
+      scroll-behavior: smooth;
+      list-style: none;
+      text-decoration: none;
+      font-family: "Poppins" , sans-serif;   
+      
+   }
+   :root{
+         --main-color: #000000;
+         --second-color: #000000;
+         --text-color: #000000;
+         --gradient: linear-gradient(#000000,#ffffff);
+   }
+   html::-webkit-scrollbar{
+         width: 0.5rem;
+   }
+   html::-webkit-scrollbar-track{
+         background: transparent;
+   }
+   html::-webkit-scrollbar-thumb{
+         /* background: var(--main-color); */
+         background: #000000;
+         border-radius: 5rem;
+   }
+   section{
+         padding: 50px 100px;
+   }
+   
+
+
+
+
+   .services-container{
+      display: grid;
+      grid-template-columns: repeat(auto-fit , minmax(350px , auto));
+      gap:1rem;
+      margin-top: 2rem;
+}
+.services-container .box{
+      padding: 10px;
+      border-radius: 1rem;
+      box-shadow: 1px 4px 41px rgba(0,0,0,0.1);
+}
+.services-container .box .box-img{
+      width: 100%;
+      height: 200px;
+} 
+.services-container .box .box-img img{
+      width: 100%;
+      height: 100%;
+      border-radius: 1rem;
+      object-fit: cover;
+      object-position: center;
+}
+.services-container .box p{
+      padding: 0 10px;
+      border: 1px solid var(--text-color) ;
+      width: 58px;
+      border-radius: 0.5rem;
+      margin: 1rem 0 1rem;
+}
+.services-container .box h3{
+      font-weight: 500;
+}
+.services-container .box h2{
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--main-color);
+      margin: 0.2rem 0 0.5rem;
+}
+
+.services-container .box h2 span{
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--text-color);
+}
+.services-container .box .btn{
+      display: flex;
+      justify-content: center;
+      background-color: #000000;
+      color: #fff;
+      padding: 10px;
+      border-radius: 0.5rem;
+}
+.services-container .box .btn:hover{
+      background-color: rgb(169, 153, 153);
+}
+
+
+.Bookcontainer {
+      width: 80%;
+      max-width: 800px;
+      margin: 50px auto; /* Center the container */
+      padding: 30px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .form-group {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 15px;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    
+    label {
+      font-weight: bold;
+    }
+    
+    input[type="text"],
+    input[type="date"],
+    select {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      width: 100%;
+    }
+    
+    .search-button {
+      text-align: center;
+      margin-top: 20px;
+    }
+    
+    button {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    button:hover {
+      background-color: #222;
+    }
+
+
+    

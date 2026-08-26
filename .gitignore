@@ -1,0 +1,26 @@
+# Editor / IDE
+.vs/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# OS files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Logs
+*.log
+
+# Environment / secrets
+.env
+.env.local
+
+# Node (in case tooling is added later)
+node_modules/

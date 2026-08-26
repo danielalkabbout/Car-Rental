@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>PremiumDrive</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+      
+</head>
+<body>
+
+ 
+ <!-- Header -->
+ <header>
+      <a href="#" class="logo"><img src="img/logo.png"height: 50px; width: 85px; ></a>
+      <div class="bx bx-menu" id="menu-icon"></div>
+      <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#ride">Ride</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#reviews">About</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+      </ul>
+      <div class="header-btn">
+            <a href="sign.html" class="sign-up">Log in</a>
+        </div>
+    </header>
+
+    <div class="form-container" id="signInForm" style="display: none;">
+        <div class="logo-container">
+            Welcome Back!
+        </div>
+  
+        <div class="social-buttons">
+            <button class="social-button facebook">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.001 2C6.47813 2 2.00098 6.47715 2.00098 12C2.00098 16.9913 5.65783 21.1283 10.4385 21.8785V14.8906H7.89941V12H10.4385V9.79688C10.4385 7.29063 11.9314 5.90625 14.2156 5.90625C15.3097 5.90625 16.4541 6.10156 16.4541 6.10156V8.5625H15.1931C13.9509 8.5625 13.5635 9.33334 13.5635 10.1242V12H16.3369L15.8936 14.8906H13.5635V21.8785C18.3441 21.1283 22.001 16.9913 22.001 12C22.001 6.47715 17.5238 2 12.001 2Z"></path>
+                </svg>
+                <span>Sign in with Facebook</span>
+            </button>
+            <button class="social-button apple">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.6734 7.2221C10.7974 7.2221 9.44138 6.2261 8.01338 6.2621C6.12938 6.2861 4.40138 7.3541 3.42938 9.0461C1.47338 12.4421 2.92538 17.4581 4.83338 20.2181C5.76938 21.5621 6.87338 23.0741 8.33738 23.0261C9.74138 22.9661 10.2694 22.1141 11.9734 22.1141C13.6654 22.1141 14.1454 23.0261 15.6334 22.9901C17.1454 22.9661 18.1054 21.6221 19.0294 20.2661C20.0974 18.7061 20.5414 17.1941 20.5654 17.1101C20.5294 17.0981 17.6254 15.9821 17.5894 12.6221C17.5654 9.8141 19.8814 8.4701 19.9894 8.4101C18.6694 6.4781 16.6414 6.2621 15.9334 6.2141C14.0854 6.0701 12.5374 7.2221 11.6734 7.2221ZM14.7934 4.3901C15.5734 3.4541 16.0894 2.1461 15.9454 0.850098C14.8294 0.898098 13.4854 1.5941 12.6814 2.5301C11.9614 3.3581 11.3374 4.6901 11.5054 5.9621C12.7414 6.0581 14.0134 5.3261 14.7934 4.3901Z"></path>
+                </svg>
+                <span>Sign in with Apple</span>
+            </button>
+        </div>
+  
+        <div class="line"></div>
+  
+        <form class="form">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input required="" placeholder="Enter your email" name="email" id="email" type="text">
+            </div>
+  
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input required="" name="password" placeholder="Enter your password" id="password" type="password">
+            </div>
+  
+            <button type="submit" class="form-submit-btn">Sign In</button>
+        </form>
+  
+        <a class="forgot-password-link link" href="#">Forgot Password</a>
+  
+        <p class="signup-link">
+            Don't have an account?
+            <a class="signup-link link" href="#"> Sign up now</a>
+        </p>
+    </div>
+
+    <script src="js.js"></script>
+     
+ </header>
+
+ <!-- <section>
+<div class="arrow" id="arrow">
+      <a href="home"><i class='bx bx-up-arrow-alt' ></i></a>
+</div>
+</section> -->
+<br>
+<div id="cookieContainers"></div>
+
+<div id="cookieContainers"></div>
+<script>
+      // Function to add the cookie SVG when the page loads
+      document.addEventListener('DOMContentLoaded', (event) => {
+          const cookieSvg = `<div class="cards">
+              <svg xml:space="preserve" viewBox="0 0 122.88 122.25" y="0px" x="0px" id="cookieSvg" version="1.1"><g><path d="M101.77,49.38c2.09,3.1,4.37,5.11,6.86,5.78c2.45,0.66,5.32,0.06,8.7-2.01c1.36-0.84,3.14-0.41,3.97,0.95 c0.28,0.46,0.42,0.96,0.43,1.47c0.13,1.4,0.21,2.82,0.24,4.26c0.03,1.46,0.02,2.91-0.05,4.35h0v0c0,0.13-0.01,0.26-0.03,0.38 c-0.91,16.72-8.47,31.51-20,41.93c-11.55,10.44-27.06,16.49-43.82,15.69v0.01h0c-0.13,0-0.26-0.01-0.38-0.03 c-16.72-0.91-31.51-8.47-41.93-20C5.31,90.61-0.73,75.1,0.07,58.34H0.07v0c0-0.13,0.01-0.26,0.03-0.38 C1,41.22,8.81,26.35,20.57,15.87C32.34,5.37,48.09-0.73,64.85,0.07V0.07h0c1.6,0,2.89,1.29,2.89,2.89c0,0.4-0.08,0.78-0.23,1.12 c-1.17,3.81-1.25,7.34-0.27,10.14c0.89,2.54,2.7,4.51,5.41,5.52c1.44,0.54,2.2,2.1,1.74,3.55l0.01,0 c-1.83,5.89-1.87,11.08-0.52,15.26c0.82,2.53,2.14,4.69,3.88,6.4c1.74,1.72,3.9,3,6.39,3.78c4.04,1.26,8.94,1.18,14.31-0.55 C99.73,47.78,101.08,48.3,101.77,49.38L101.77,49.38z M59.28,57.86c2.77,0,5.01,2.24,5.01,5.01c0,2.77-2.24,5.01-5.01,5.01 c-2.77,0-5.01-2.24-5.01-5.01C54.27,60.1,56.52,57.86,59.28,57.86L59.28,57.86z M37.56,78.49c3.37,0,6.11,2.73,6.11,6.11 s-2.73,6.11-6.11,6.11s-6.11-2.73-6.11-6.11S34.18,78.49,37.56,78.49L37.56,78.49z M50.72,31.75c2.65,0,4.79,2.14,4.79,4.79 c0,2.65-2.14,4.79-4.79,4.79c-2.65,0-4.79-2.14-4.79-4.79C45.93,33.89,48.08,31.75,50.72,31.75L50.72,31.75z M119.3,32.4 c1.98,0,3.58,1.6,3.58,3.58c0,1.98-1.6,3.58-3.58,3.58s-3.58-1.6-3.58-3.58C115.71,34.01,117.32,32.4,119.3,32.4L119.3,32.4z M93.62,22.91c2.98,0,5.39,2.41,5.39,5.39c0,2.98-2.41,5.39-5.39,5.39c-2.98,0-5.39-2.41-5.39-5.39 C88.23,25.33,90.64,22.91,93.62,22.91L93.62,22.91z M97.79,0.59c3.19,0,5.78,2.59,5.78,5.78c0,3.19-2.59,5.78-5.78,5.78 c-3.19,0-5.78-2.59-5.78-5.78C92.02,3.17,94.6,0.59,97.79,0.59L97.79,0.59z M76.73,80.63c4.43,0,8.03,3.59,8.03,8.03 c0,4.43-3.59,8.03-8.03,8.03s-8.03-3.59-8.03-8.03C68.7,84.22,72.29,80.63,76.73,80.63L76.73,80.63z M31.91,46.78 c4.8,0,8.69,3.89,8.69,8.69c0,4.8-3.89,8.69-8.69,8.69s-8.69-3.89-8.69-8.69C23.22,50.68,27.11,46.78,31.91,46.78L31.91,46.78z M107.13,60.74c-3.39-0.91-6.35-3.14-8.95-6.48c-5.78,1.52-11.16,1.41-15.76-0.02c-3.37-1.05-6.32-2.81-8.71-5.18 c-2.39-2.37-4.21-5.32-5.32-8.75c-1.51-4.66-1.69-10.2-0.18-16.32c-3.1-1.8-5.25-4.53-6.42-7.88c-1.06-3.05-1.28-6.59-0.61-10.35 C47.27,5.95,34.3,11.36,24.41,20.18C13.74,29.69,6.66,43.15,5.84,58.29l0,0.05v0h0l-0.01,0.13v0C5.07,73.72,10.55,87.82,20.02,98.3 c9.44,10.44,22.84,17.29,38,18.1l0.05,0h0v0l0.13,0.01h0c15.24,0.77,29.35-4.71,39.83-14.19c10.44-9.44,17.29-22.84,18.1-38l0-0.05 v0h0l0.01-0.13v0c0.07-1.34,0.09-2.64,0.06-3.91C112.98,61.34,109.96,61.51,107.13,60.74L107.13,60.74z M116.15,64.04L116.15,64.04 L116.15,64.04L116.15,64.04z M58.21,116.42L58.21,116.42L58.21,116.42L58.21,116.42z"></path></g></svg>
+              <p class="cookieHeading">We use cookies.</p>
+              <p class="cookieDescription">We use cookies to ensure that we give you the best experience on our website. <br><a href="#">Read cookies policies</a>.</p>
+              <div class="buttonContainers">
+                  <button class="acceptButton">Allow</button>
+                  <button class="declineButton">Decline</button>
+              </div>
+          </div>`;
+  
+          const cookieDiv = document.createElement('div');
+          cookieDiv.classList.add('cards'); // Optionally, add any desired class
+  
+          // Set the SVG as the inner HTML of the new div
+          cookieDiv.innerHTML = cookieSvg;
+  
+          // Find the container where you want to insert the new div (by ID)
+          const container = document.getElementById('cookieContainers');
+  
+          // Append the new div (with SVG inside) to the container
+          container.appendChild(cookieDiv);
+  
+          // Add event listeners to handle button clicks
+          const acceptButton = document.querySelector('.acceptButton');
+          const declineButton = document.querySelector('.declineButton');
+  
+          // Function to close the cookie banner
+          function closeCookieBanner() {
+              cookieDiv.style.display = 'none';
+          }
+  
+          // Add click event listeners to buttons
+          acceptButton.addEventListener('click', closeCookieBanner);
+          declineButton.addEventListener('click', closeCookieBanner);
+      });
+  </script>
+<!-- Home -->
+      <section class="home" id="home">
+            <div id="bcpic">
+                  <img src="images/images/pexels-lynxexotics-3802510-removebg-preview.png">
+            </div>
+            <div class="text">
+                  <span><p>Plan your trip now</p></span>
+                  <h1> Save big with our <br>car rental</h1>
+                  <p>To contribute to positive change and achieve our sustainability goals with many extraordinary</p>
+                  <div class="app-stores">
+                        <img src="images/images/download/googleplay.svg">
+                        <img src="images/images/download/appstore.svg" alt="">
+                  </div>
+            </div>
+
+            <!-- <div class="form-container">
+                  <form action="">
+                        <div class="input-box">
+                              <span>Location</span>
+                              <input type="search" placeholder="Search Places">
+                        </div>
+                        <div class="input-box">
+                              <span>Pick-Up Date</span>
+                              <input type="date" name="" id="">
+                        </div>
+                        <div class="input-box">
+                              <span>Return Date</span>
+                              <input type="date" name="" id="">
+                        </div>
+                        <input type="submit" name="" id="" class="btn">
+                  </form>
+            </div> -->
+      </section>
+
+        
+<!-- Ride -->
+
+      <section class="ride" id="ride">
+            <div class="heading">
+                  <span>Plan your trip now</span>
+                  <h1>Quick & easy car rental</h1>
+            </div>
+
+            <div class="ride-container">
+                 <div class="box">
+                  <img src="new imgs/car-insurance.png">
+                   <h2>Select car </h2>
+                   <p>We offers a big range of vehicles for all your driving needs.
+                         We have the perfect car to meet your needs</p>
+                 </div> 
+
+                 <div class="box">
+                  <img src="new imgs/customer-service.png">
+                  <h2>Contact Operator </h2>
+                  <p>Our knowledgeable and friendly
+                         operators are always ready to help with any questions or concerns</p>
+                </div> 
+
+                <div class="box">
+               <img src="new imgs/steering-wheel.png">
+                  <h2>Let's Drive</h2>
+                  <p>Whether you're hitting the open road, we've always got you covered with our wide range of cars</p>
+                </div> 
+            </div>
+      </section>
+
+
+
+    <!-- Services -->
+      <section class = "services" id = "services">
+            <div class="heading">
+             <span>Best Services</span>
+             <h1>Explore Out Top Deals <br> From Top Dealers </h1> 
+            </div>
+
+            <div class = "services-container">
+            
+            <div class="box">
+                  <div class = "box-img">
+                        <img src="new imgs/new imgs/free-photo-of-black-mercedes-s-class-removebg-preview.png">
+                        <!-- style="height: 200px; width: 200px;"--> 
+                  </div>
+                  <p>2017</p>
+                  <h3>2018 Honda Civic</h3>
+                  <h2>$58500 | $358 <span>/month</span></h2>
+                  <a href="cars.html" class = "btn">More</a>
+            </div>
+
+            <div class="box">
+                  <div class = "box-img">
+                        <img src="new imgs/new imgs/aston-martin-removebg-preview.png">
+                  </div>
+                  <p>2017</p>
+                  <h3>2018 Honda Civic</h3>
+                  <h2>$58500 | $358 <span>/month</span></h2>
+                  <a href="#" class = "btn">More</a>
+            </div>
+
+            <div class="box">
+                  <div class = "box-img">
+                        <img src="new imgs/new imgs/rolls-roycwe-removebg-preview.png">
+                  </div>
+                  <p>2017</p>
+                  <h3>2018 Honda Civic</h3>
+                  <h2>$58500 | $358 <span>/month</span></h2>
+                  <a href="#" class = "btn">More</a>
+            </div>
+
+            <div class="box">
+                  <div class = "box-img">
+                        <img src="new imgs/new imgs/lambo-removebg-preview.png">
+                  </div>
+                  <p>2017</p>
+                  <h3>2018 Honda Civic</h3>
+                  <h2>$58500 | $358 <span>/month</span></h2>
+                  <a href="#" class = "btn">More</a>
+            </div>
+
+            <div class="box">
+                  <div class = "box-img">
+                        <img src="new imgs/new imgs/mcLaren-removebg-preview.png">
+                  </div>
+                  <p>2017</p>
+                  <h3>2018 Honda Civic</h3>
+                  <h2>$58500 | $358 <span>/month</span></h2>
+                  <a href="#" class = "btn">More</a>
+            </div>
+
+            <div class="box">
+                  <div class = "box-img">
+                        <img src="/img/car6.jpg">
+                  </div>
+                  <p>2017</p>
+                  <h3>2018 Honda Civic</h3>
+                  <h2>$58500 | $358 <span>/month</span></h2>
+                  <a href="#" class = "btn">More</a>
+            </div>
+
+            </div>
+      </section>
+
+  <!-- About -->
+      <section class="about" id="about">
+            <div class="heading">
+                  <span>About</span>
+                  <h1>Best Custumor Expriences </h1> 
+                 </div>
+                 <div class="about-container">
+                        <div class="about-img">
+                              <img src="images/images/brabus-dans-removebg-preview.png" alt="">
+                        </div>
+                        <div class="about-text">
+                              <span>About US</span>
+                              <p>Welcome to Premium Drive, your premier destination for luxury car rentals. 
+                                    We specialize in providing an exclusive selection of high-end vehicles to elevate your driving experience.
+                                     Whether you're traveling for business or pleasure, our fleet offers a range of stylish and meticulously maintained cars to suit your 
+                                     preferences. At Premium Drive, we pride ourselves on delivering exceptional service and making luxury car rentals accessible to all.</p>
+                              <p> Our goal is to ensure that every customer enjoys a seamless and memorable experience from booking to drop-off.
+                                     Discover the joy of driving with Premium Drive, where luxury meets convenience.</p>
+                              <a href="#" class="btn">Learn More</a>
+                        </div>
+                 </div>
+      </section>
+ <!-- Reviews -->
+      <section class="reviews" id="reviews">
+            <div class="heading">
+                  <span>Reviews</span>
+                  <h1>What Our Custumor Say </h1> 
+                 </div>
+                 <div class="reviews-container">
+                  <div class="box">
+                        <div class="rev-img">
+                              <img style="object-position: -10px 5px;" src="images/images/team/person1.png">
+                        </div>
+                        <h2>Elio Restom</h2>
+                        <div class="stars">
+                              <i class='bx bxs-star'></i>
+                              <i class='bx bxs-star'></i>
+                              <i class='bx bxs-star'></i>
+                              <i class='bx bxs-star'></i>
+                              <i class='bx bxs-star-half'></i>
+                              <p>We rented a car from this website and had an 
+                              amazing experience! The booking was easy and the rental rates were very affordable.</p>
+                        </div>
+                  </div>
+                 
+                  <div class="box">
+                        <div class="rev-img">
+                              <img src="images/images/team/person2.png">
+                        </div>
+                        <h2>Salim Karam</h2>
+                        <div class="stars">
+                              <i class='bx bxs-star'></i>
+                              <i class='bx bxs-star'></i>
+                              <i class='bx bxs-star'></i>
+                              <i class='bx bxs-star'></i>
+                              <i class='bx bxs-star-half'></i>
+                              <p>The rem value is the same as the em value displayed above. Both units are scalable.</p>
+                        </div>
+                  </div>
+
+                  <div class="box">
+                        <div class="rev-img">
+                              <img src="images/images/team/person3.png">
+                        </div>
+                        <h2>Shady jamil</h2>
+                        <div class="stars">
+                              <i class='bx bxs-star'></i>
+                              <i class='bx bxs-star'></i>
+                              <i class='bx bxs-star'></i>
+                              <i class='bx bxs-star'></i>
+                              <i class='bx bxs-star-half'></i>
+                        </div>
+                        <p>The car was in great condition and made our trip even better. Highly recommend for this car rental website!</p>
+                  </div>
+                  
+                 </div>
+      </section>
+
+     <!--NwsLetter  -->
+      
+     
+      <footer class="footer section" id="footer">
+            
+            <section class="newsletter">
+                  <h2>Subscribe To Newsletter</h2>
+                  <div class="input-group">
+                        <input type="email" class="input" id="Email" name="Email" placeholder="jhondoe@example.com" autocomplete="off">
+                        <input class="button--submit" value="Subscribe" type="submit">
+                    </div>
+            </section>
+          
+            <div class="footer__content">
+                <div>
+                    <h3 class="footer__title">Premium Drive</h3>
+                    <h3 class="footer__title">We offers a big range of vehicles<br> for all your driving needs. <br>We have the perfect car to meet your needs.</h3>
+                   <div>
+                    <ul class="footer__links">
+                      
+                        <li>
+                              <ion-icon name="call-outline"></ion-icon> 
+                            <a href="# " class="footer__links">+961-71522745</a>
+                        </li>
+                        <li>
+                              <ion-icon name="mail-open-outline"></ion-icon>
+                            <a href="# " class="footer__links">PremiumDrive@gmail.com</a>
+                        </li>
+                        <li>
+                              <ion-icon name="location-outline"></ion-icon>
+                              <a href="# " class="footer__links">Zgharta</a>
+                          </li> 
+                       
+                     </ul>
+                    </div>
+                </div> 
+                <div>
+                    <h3 class="footer__title">COMPANY</h3>
+                    <ul class="footer__links">
+                      
+                       
+                        <li>
+                              <a href="#services" class="footer__links">Services</a>
+                        </li>
+                        <li>
+                              <a href="#about " class="footer__links">About Us</a>
+                            
+                        </li>
+                        <li>
+                            <a href="#reviews" class="footer__links">Customers</a>
+                        </li>
+                    </ul>
+                </div> 
+                <div>
+                    <h3 class="footer__title">WORKING HOURS</h3>
+                    <ul class="footer__links">
+                        <li>
+                            <a href="# " class="footer__links">Mon - Fri: 09:00AM - 09:00PM</a>
+                        </li>
+                        <li>
+                            <a href="# " class="footer__links">Sat: 09:00AM - 07:00PM</a>
+                        </li>
+                        <li>
+                            <a href="# " class="footer__links">Sun: Closed</a>
+                        </li>
+                       
+                    </ul>
+                </div> 
+            </div>
+      </footer>
+            <footer>
+            <div class="main">
+                  <div class="up">
+                    <button class="card1">
+                      <svg class="instagram" fill-rule="nonzero" height="30px" width="30px" viewBox="0,0,256,256" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g style="mix-blend-mode: normal" text-anchor="none" font-size="none" font-weight="none" font-family="none" stroke-dashoffset="0" stroke-dasharray="" stroke-miterlimit="10" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="none" fill-rule="nonzero"><g transform="scale(8,8)"><path d="M11.46875,5c-3.55078,0 -6.46875,2.91406 -6.46875,6.46875v9.0625c0,3.55078 2.91406,6.46875 6.46875,6.46875h9.0625c3.55078,0 6.46875,-2.91406 6.46875,-6.46875v-9.0625c0,-3.55078 -2.91406,-6.46875 -6.46875,-6.46875zM11.46875,7h9.0625c2.47266,0 4.46875,1.99609 4.46875,4.46875v9.0625c0,2.47266 -1.99609,4.46875 -4.46875,4.46875h-9.0625c-2.47266,0 -4.46875,-1.99609 -4.46875,-4.46875v-9.0625c0,-2.47266 1.99609,-4.46875 4.46875,-4.46875zM21.90625,9.1875c-0.50391,0 -0.90625,0.40234 -0.90625,0.90625c0,0.50391 0.40234,0.90625 0.90625,0.90625c0.50391,0 0.90625,-0.40234 0.90625,-0.90625c0,-0.50391 -0.40234,-0.90625 -0.90625,-0.90625zM16,10c-3.30078,0 -6,2.69922 -6,6c0,3.30078 2.69922,6 6,6c3.30078,0 6,-2.69922 6,-6c0,-3.30078 -2.69922,-6 -6,-6zM16,12c2.22266,0 4,1.77734 4,4c0,2.22266 -1.77734,4 -4,4c-2.22266,0 -4,-1.77734 -4,-4c0,-2.22266 1.77734,-4 4,-4z"></path></g></g></svg>
+                    </button>
+                    <button class="card2">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="24" class="facebook" width="24">
+                        <path d="M9.19795 21.5H13.198V13.4901H16.8021L17.198 9.50977H13.198V7.5C13.198 6.94772 13.6457 6.5 14.198 6.5H17.198V2.5H14.198C11.4365 2.5 9.19795 4.73858 9.19795 7.5V9.50977H7.19795L6.80206 13.4901H9.19795V21.5Z"></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="down">
+                    <button class="card3">
+                      <svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="whatsapp">
+                        <path d="M19.001 4.908A9.817 9.817 0 0 0 11.992 2C6.534 2 2.085 6.448 2.08 11.908c0 1.748.458 3.45 1.321 4.956L2 22l5.255-1.377a9.916 9.916 0 0 0 4.737 1.206h.005c5.46 0 9.908-4.448 9.913-9.913A9.872 9.872 0 0 0 19 4.908h.001ZM11.992 20.15A8.216 8.216 0 0 1 7.797 19l-.3-.18-3.117.818.833-3.041-.196-.314a8.2 8.2 0 0 1-1.258-4.381c0-4.533 3.696-8.23 8.239-8.23a8.2 8.2 0 0 1 5.825 2.413 8.196 8.196 0 0 1 2.41 5.825c-.006 4.55-3.702 8.24-8.24 8.24Zm4.52-6.167c-.247-.124-1.463-.723-1.692-.808-.228-.08-.394-.123-.556.124-.166.246-.641.808-.784.969-.143.166-.29.185-.537.062-.247-.125-1.045-.385-1.99-1.23-.738-.657-1.232-1.47-1.38-1.716-.142-.247-.013-.38.11-.504.11-.11.247-.29.37-.432.126-.143.167-.248.248-.413.082-.167.043-.31-.018-.433-.063-.124-.557-1.345-.765-1.838-.2-.486-.404-.419-.557-.425-.142-.009-.309-.009-.475-.009a.911.911 0 0 0-.661.31c-.228.247-.864.845-.864 2.067 0 1.22.888 2.395 1.013 2.56.122.167 1.742 2.666 4.229 3.74.587.257 1.05.408 1.41.523.595.19 1.13.162 1.558.1.475-.072 1.464-.6 1.673-1.178.205-.58.205-1.075.142-1.18-.061-.104-.227-.165-.475-.29Z"></path>
+                      </svg>
+                    </button>
+                    <button class="card4">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="24" class="gmail" width="24">
+                        <path d="M6 12C6 15.3137 8.68629 18 12 18C14.6124 18 16.8349 16.3304 17.6586 14H12V10H21.8047V14H21.8C20.8734 18.5645 16.8379 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C15.445 2 18.4831 3.742 20.2815 6.39318L17.0039 8.68815C15.9296 7.06812 14.0895 6 12 6C8.68629 6 6 8.68629 6 12Z"></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+    
+      
+            </footer>
+
+      <script src="https://unpkg.com/scrollreveal"></script>
+     <script src="js.js"></script> 
+     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
